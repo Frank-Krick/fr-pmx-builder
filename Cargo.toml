@@ -1,0 +1,16 @@
+[package]
+name = "fr-pmx-builder"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+itertools = "0.13.0"
+tokio = { version = "1.39.3", features = ["full"] }
+tonic = "0.12.1"
+clap = { version = "4.5.16", features = ["derive"] }
+fr-pmx-config-lib = { path = "../fr-pmx-config-lib" }
+fr-logging = { path = "../fr-logging" }
+prost = "0.13.1"
+
+[build-dependencies]
+tonic-build = "0.12.1"
